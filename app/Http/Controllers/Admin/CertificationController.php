@@ -11,7 +11,7 @@ use App\ModelProject;
 use Auth;
 use App\User;
 use Input;
-class CompanyController extends Controller
+class CertificationController extends Controller
 {
     public function __construct()
     {

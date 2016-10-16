@@ -15,6 +15,6 @@ abstract class Controller extends BaseController
     public function mustBeAdministrator(){
       if(Auth::user()->account='cmzapataj')
         return true;
-      return redirect('admin/projectmanager/');
+      return redirect('admin/modelproject/');
     }
 }

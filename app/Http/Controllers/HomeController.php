@@ -8,7 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Auth;
 use Validator;
-use App\ProjectManager;
+use App\ModelProject;
 
 class HomeController extends Controller
 {
@@ -21,8 +21,8 @@ class HomeController extends Controller
     {
         if (Auth::check()) {
             $user = Auth::user();
-            if(count(ProjectManager::where("user_id",$user->id)->get())>0)
-                return view('projectmanager/home', ['user' => $user]);
+            if(count(ModelProject::where("user_id",$user->id)->get())>0)
+                return view('modelproject/home', ['user' => $user]);
             elseif($user->account == "cmzapataj")
                 return view('admin/home', ['user' => $user]);
         }else
