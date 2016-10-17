@@ -5,11 +5,12 @@
   <div class="spacer"></div>
   <h1>Answer Question</h1><br><br>
   <div class="row">
-       ¿Cual es mi color favorito? <br><br>
+      Some kinds of UML diagrams are: <br><br>
       <form id="register_form" role="form" method="post" enctype="multipart/form-data">
-        <input type="checkbox" name="respuesta" value="azul" checked> Azul<br>
-        <input type="checkbox" name="respuesta" value="amarillo"> Amarillo<br>
-        <input type="checkbox" name="respuesta" value="rojo"> Rojo<br><br>
+        <input type="checkbox" name="respuesta" value="a" checked> a) Goal Diagram<br>
+        <input type="checkbox" name="respuesta" value="b"> b) Class Diagram<br>
+        <input type="checkbox" name="respuesta" value="c"> c) Process Diagram<br>
+        <input type="checkbox" name="respuesta" value="d"> d) State Machine Diagram<br><br>
         <div class="row">
           <div class="col-md-12">
             <p style="text-align: center;">                    
