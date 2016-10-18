@@ -5,7 +5,7 @@
   <div class="spacer"></div>
   <h1>Hi, {{ $user->name }}</h1>
   <div class="row">
-      <form id="update_form" role="form" method="post" action="/my-account/" enctype="multipart/form-data">
+      <form id="update_form" role="form" method="post" action="/account/" enctype="multipart/form-data">
         {!! csrf_field() !!}
         <div class="form-group col-md-4">
           {!! Form::label('Code') !!}

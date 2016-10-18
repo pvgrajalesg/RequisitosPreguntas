@@ -1,6 +1,6 @@
 @extends('plantilla')    <!-- resources/views/auth/login.blade.php -->
 @section('titulo')
-Analyst
+Tester
 @endsection
 @section('menu')
 @endsection
@@ -22,7 +22,7 @@ Analyst
                     <th><div class="row">
                             <div class="col-md-12">
                                 <p style="text-align: right;">
-                                    <a class="btn btn-primary btn-md" href="/project-managers">Model Project</a></button>
+                                    <a class="btn btn-primary btn-md" href="/modelproject">Model Project</a></button>
                                 </p>
                             </div>
                         </div>
@@ -30,7 +30,7 @@ Analyst
                     <th><div class="row">
                             <div class="col-md-12">
                                 <p style="text-align: left;">
-                                    <a class="btn btn-primary btn-md" href="/companies">Certification</a></button>
+                                    <a class="btn btn-primary btn-md" href="/certification">Certification</a></button>
                                 </p>
                             </div>
                         </div>

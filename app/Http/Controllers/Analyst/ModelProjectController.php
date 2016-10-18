@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Analyst;
 
 use Illuminate\Http\Request;
 use Validator;
@@ -10,7 +10,7 @@ use App\ModelProject;
 use Auth;
 use App\User;
 use Input;
-class ProjectManagerController extends Controller
+class ModelProjectController extends Controller
 {
     public function __construct()
     {
@@ -24,7 +24,7 @@ class ProjectManagerController extends Controller
      */
     public function index(){
         $project_managers = ModelProject::all();
-        return view('admin/modelproject/list', ['user' => Auth::user(), 'project_managers' => $project_managers] );
+        return view('analyst/modelproject/list', ['user' => Auth::user(), 'project_managers' => $project_managers] );
     }
     /**
      * Show the form for creating a new resource.
@@ -32,7 +32,7 @@ class ProjectManagerController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create(Request $request){
-        return view('admin/modelproject/register', ['user' => Auth::user()] );
+        return view('analyst/modelproject/register', ['user' => Auth::user()] );
     }
 
     /**
@@ -44,7 +44,7 @@ class ProjectManagerController extends Controller
     public function store(Request $request){
         $data = $request->all();
  
-            return redirect('admin/modelproject/register');
+            return redirect('analyst/modelproject/register');
     }
 
 

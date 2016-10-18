@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Analyst;
 
 use Illuminate\Http\Request;
 use Validator;
@@ -11,7 +11,7 @@ use App\ModelProject;
 use Auth;
 use App\User;
 use Input;
-class CertificationController extends Controller
+class CertificateController extends Controller
 {
     public function __construct()
     {
@@ -25,7 +25,7 @@ class CertificationController extends Controller
      */
     public function index(){
         $companies = Certification::all();
-        return view('admin/certification/list', ['user' => Auth::user(), 'companies' => $companies] );
+        return view('analyst/certification/list', ['user' => Auth::user(), 'companies' => $companies] );
     }
     /**
      * Show the form for creating a new resource.
@@ -38,7 +38,7 @@ class CertificationController extends Controller
         foreach ($project_managers as $project_manager) {
             $res[$project_manager->id] = $project_manager->user->account;
         }
-        return view('admin/certification/register', ['user' => Auth::user(), 'project_managers' => $res] );
+        return view('analyst/certification/register', ['user' => Auth::user(), 'project_managers' => $res] );
     }
 
     /**
@@ -73,7 +73,7 @@ class CertificationController extends Controller
     {
         $company = Certification::find(intval($id));
         if(isset($company)){
-            return view('admin/certification/get', ['user' => Auth::user(), 'company' => $company] );
+            return view('analyst/certification/get', ['user' => Auth::user(), 'company' => $company] );
         }
         return redirect('/project-managers/');
     }

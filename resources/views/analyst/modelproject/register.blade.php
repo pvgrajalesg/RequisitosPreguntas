@@ -1,7 +1,7 @@
-@extends('admin/home')    <!-- resources/views/auth/login.blade.php -->
+@extends('analyst/home')    <!-- resources/views/auth/login.blade.php -->
 @section('contenido')
 <main id="component" class="detalle">
-  <div class="breadcrumb-class">You are in:<a href="/" target="_self" title="Inicio">Home</a>/<a href="/project-managers/" target="_self" title="Project Managers">Model Project</a>/<span>Answer Question</span></div>
+  <div class="breadcrumb-class">You are in:<a href="/" target="_self" title="Inicio">Home</a>/<a href="/modelproject/" target="_self" title="Project Managers">Model Project</a>/<span>Answer Question</span></div>
   <div class="spacer"></div>
   <h1>Answer Question</h1><br><br>
   <div class="row">
@@ -14,7 +14,7 @@
         <div class="row">
           <div class="col-md-12">
             <p style="text-align: center;">                    
-              <a class="btn btn-primary btn-md" href="/project-managers/">Answer</a></button>
+              <a class="btn btn-primary btn-md" href="/modelproject/">Answer</a></button>
             </p>
           </div>
         </div>  

@@ -1,4 +1,4 @@
-@extends('admin/home')    <!-- resources/views/auth/login.blade.php -->
+@extends('analyst/home')    <!-- resources/views/auth/login.blade.php -->
 @section('contenido')
 <script src="/js/jquery.dataTables.min.js" type="text/javascript"></script>
 <main id="component" class="detalle">
@@ -9,7 +9,7 @@
     <table class="table" id="tabla-model-project">
       <thead>
         <tr>
-          <th>Name</th><th>Description</th><th>K_assigned</th><th>Analyst question amount</th><th>Amount question correct</th><th>Bidding capacity company</th>
+          <th>Name</th><th>Description</th><th>K_assigned</th><th>Analyst question amount</th><th>Amount question correct</th><th>Resource company</th>
         </tr>
       </thead>
       <tbody>
@@ -31,7 +31,7 @@
                 <th><div class="row">
                     	<div class="col-md-12">
                         	<p style="text-align: right;">
-                                <a class="btn btn-primary btn-md" href="/project-managers/register">Answer question</a></button>
+                                <a class="btn btn-primary btn-md" href="/modelproject/register">Answer question</a></button>
                             </p>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
                 <th><div class="row">
                         <div class="col-md-12">
                             <p style="text-align: left;">
-                                <a class="btn btn-primary btn-md" href="/project-managers/update">Request resources</a></button>
+                                <a class="btn btn-primary btn-md" href="/modelproject/update">Request resources</a></button>
                             </p>
                         </div>
                     </div>

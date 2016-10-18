@@ -24,7 +24,7 @@ class HomeController extends Controller
             if(count(ModelProject::where("user_id",$user->id)->get())>0)
                 return view('modelproject/home', ['user' => $user]);
             elseif($user->account == "cmzapataj")
-                return view('admin/home', ['user' => $user]);
+                return view('analyst/home', ['user' => $user]);
         }else
             return redirect('auth/login');
         //

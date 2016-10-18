@@ -12,8 +12,8 @@
 */
 // Normal routes...
 Route::get('/', 'HomeController@getHome');
-Route::get('my-account/', 'HomeController@getAccount');
-Route::post('my-account/', 'HomeController@updateAccount');
+Route::get('account/', 'HomeController@getAccount');
+Route::post('account/', 'HomeController@updateAccount');
 
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');
@@ -26,14 +26,14 @@ Route::get('password/reset/{token}', 'Auth\PasswordController@getReset');
 Route::post('password/reset', 'Auth\PasswordController@postReset');
 //Administrator Routes
   //Project Manager Routes
-  Route::get('/project-managers', 'Admin\ProjectManagerController@index');
-  Route::get('/project-managers/register/', 'Admin\ProjectManagerController@create');
-  Route::post('/project-managers/register/', 'Admin\ProjectManagerController@store');
-  Route::get('/project-managers/update/{id}/', 'Admin\ProjectManagerController@edit');
-  Route::post('/project-managers/update/{id}/', 'Admin\ProjectManagerController@update');
+  Route::get('/modelproject', 'Analyst\ModelProjectController@index');
+  Route::get('/modelproject/register/', 'Analyst\ModelProjectController@create');
+  Route::post('/modelproject/register/', 'Analyst\ModelProjectController@store');
+  Route::get('/modelproject/update/{id}/', 'Analyst\ModelProjectController@edit');
+  Route::post('/modelproject/update/{id}/', 'Analyst\ModelProjectController@update');
   //Companies Routes
-  Route::get('/companies', 'Admin\CompanyController@index');
-  Route::get('/companies/register/', 'Admin\CompanyController@create');
-  Route::post('/companies/register/', 'Admin\CompanyController@store');
-  Route::get('/companies/update/{id}/', 'Admin\CompanyController@edit');
-  Route::post('/companies/update/{id}/', 'Admin\CompanyController@update');
+  Route::get('/certification', 'Analyst\CertificateController@index');
+  Route::get('/certification/register/', 'Analyst\CertificateController@create');
+  Route::post('/certification/register/', 'Analyst\CertificateController@store');
+  Route::get('/certification/update/{id}/', 'Analyst\CertificateController@edit');
+  Route::post('/certification/update/{id}/', 'Analyst\CertificateController@update');
