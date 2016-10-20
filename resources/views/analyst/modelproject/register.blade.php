@@ -19,7 +19,26 @@
               <input class="btn btn-primary btn-md" type="button" value="Answer" onclick="correcto()" />
             </p>
           </div>
-        </div>   
+        </div>  
+        <div class="row">
+          <div class="col-md-12">
+            <p style="text-align: right;">        
+              <a class="btn btn-primary btn-md" href="/modelproject/" >Return</a>         
+              <a class="btn btn-primary btn-md" href="/modelproject/" id=next>Next</a>
+              <script type="text/javascript">
+                document.getElementById('next').onclick=function(){ 
+                  return false
+                }
+              </script>
+              <script type="text/javascript">
+                function correcto(){
+                  return "Respuesta correcta"
+                }
+              </script>
+              
+            </p>
+          </div>
+        </div>  
       </form>
   </div>
 </main>
