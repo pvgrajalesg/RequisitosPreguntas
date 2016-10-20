@@ -9,7 +9,7 @@
     <table class="table" id="tabla-model-project">
       <thead>
         <tr>
-          <th>Name</th><th>Description</th><th>K_assigned</th><th>Analyst question amount</th><th>Amount question correct</th><th>Resource company</th>
+          <th>Name</th><th>Description</th><th>K_assigned</th><th>Analyst question amount</th><th>Amount question correct</th><th>Resources company</th>
         </tr>
       </thead>
       <tbody>
@@ -17,7 +17,7 @@
           	<td>Papeleria Don Juan</td>
           	<td>Se pretente realizar un sistema de inventario que permita la administración de la papeleria</td>
           	<td>20</td>
-          	<td>5</td>
+          	<td>1</td>
           	<td>0</td>
           	<td>35</td>
           </tr>

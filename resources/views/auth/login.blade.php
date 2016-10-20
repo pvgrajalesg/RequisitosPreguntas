@@ -33,14 +33,6 @@ Login
                 <input type="password" name="password" id="password" value="" class="form-control" size="25" maxlength="99" required="">
             </div>
             <div class="form-group">
-                <label>Tipo de usuario *</label><br>
-                    <select name="tipousuario">
-                        <option value="Analyst">Analyst</option>
-                        <option value="Developer">Developer</option>
-                        <option value="Tester">Tester</option>
-                    </select>
-            </div>
-            <div class="form-group">
                 {{$errors->has('account') ? $errors->first('account'): ''}}
                 <button type="submit" class="form-control btn btn-primary">Login</button>
             </div>
