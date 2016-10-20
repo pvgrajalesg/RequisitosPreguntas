@@ -41,10 +41,12 @@ class ModelProjectController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request){
-        $data = $request->all();
- 
-            return redirect('analyst/modelproject/register');
+    public function update(Request $request)
+    {
+        
+        return view('analyst/modelproject/get', ['user' => Auth::user()] );
+
+
     }
 
 

@@ -85,22 +85,12 @@ class CertificateController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        $data = $request->all();
-        $company = Certification::find(intval($id));
-        if(isset($company)){
-            $data = $request->all();
-            $validator =  Validator::make($data, [
-                'name' => 'required|unique:companies',
-            ]);
-            if ($validator->fails())
-                return redirect('/companies/update/'.$company->id.'/')->withInput()->withErrors($validator);
-            $company->name = $data['name'];
-            $company->save();
-            return redirect('/companies/');
-        }
-        return redirect('/companies/');
+        $project_managers = ModelProject::select(['*'])->whereNotIn('id', Certification::select("project_manager_id")->get())->get();
+        $res= [];
+        return view('analyst/certification/get', ['user' => Auth::user(), 'project_managers' => $res] );
+
 
     }
 }

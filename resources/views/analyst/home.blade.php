@@ -1,6 +1,6 @@
 @extends('plantilla')    <!-- resources/views/auth/login.blade.php -->
 @section('titulo')
-Analyst
+Developer
 @endsection
 @section('menu')
 @endsection
@@ -9,9 +9,9 @@ Analyst
     <div class="breadcrumb-class">You are in:<a href="/" target="_self" title="Inicio">Home</a></div>
     <div id="system-message-container">
         <div class="alert alert-message">
-        	<h4 class="alert-heading">Welcome {{ $user->name }}</h4>
+        	<h4 class="alert-heading" align="center">Welcome {{ $user->name }}</h4>
             <div>
-               <div class="alert-message">¿What do you want to do?</div>
+               <div class="alert-message" align="center">¿What do you want to do?</div>
         	</div>
         </div>
     </div>
@@ -22,7 +22,7 @@ Analyst
                     <th><div class="row">
                             <div class="col-md-12">
                                 <p style="text-align: right;">
-                                    <a class="btn btn-primary btn-md" href="/modelproject">Model Project</a></button>
+                                    <a class="btn btn-primary btn-md" href="/modelproject">Test Project</a></button>
                                 </p>
                             </div>
                         </div>

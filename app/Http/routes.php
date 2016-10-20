@@ -25,15 +25,14 @@ Route::post('password/email', 'Auth\PasswordController@postEmail');
 Route::get('password/reset/{token}', 'Auth\PasswordController@getReset');
 Route::post('password/reset', 'Auth\PasswordController@postReset');
 //Administrator Routes
-  //Project Manager Routes
+  //Model project Routes
   Route::get('/modelproject', 'Analyst\ModelProjectController@index');
   Route::get('/modelproject/register/', 'Analyst\ModelProjectController@create');
-  Route::post('/modelproject/register/', 'Analyst\ModelProjectController@store');
-  Route::get('/modelproject/update/{id}/', 'Analyst\ModelProjectController@edit');
-  Route::post('/modelproject/update/{id}/', 'Analyst\ModelProjectController@update');
-  //Companies Routes
+  Route::post('/modelproject/update/', 'Analyst\ModelProjectController@update');
+  //Certification Routes
   Route::get('/certification', 'Analyst\CertificateController@index');
   Route::get('/certification/register/', 'Analyst\CertificateController@create');
   Route::post('/certification/register/', 'Analyst\CertificateController@store');
-  Route::get('/certification/update/{id}/', 'Analyst\CertificateController@edit');
-  Route::post('/certification/update/{id}/', 'Analyst\CertificateController@update');
+  Route::get('/certification/update/', 'Analyst\CertificateController@update');
+
+

@@ -2,9 +2,9 @@
 @section('contenido')
 <script src="/js/jquery.dataTables.min.js" type="text/javascript"></script>
 <main id="component" class="detalle">
-  <div class="breadcrumb-class">You are in:<a href="/" target="_self" title="Inicio">Home</a>/<span>Model Project</span></div>
+  <div class="breadcrumb-class">You are in:<a href="/" target="_self" title="Inicio">Home</a>/<span>Test Project</span></div>
   <div class="spacer"></div>
-<h1>Model Project</h1><br>
+<h1>Test Project</h1><br>
 <div class="dataTables_wrapper" role="grid">
     <table class="table" id="tabla-model-project">
       <thead>
