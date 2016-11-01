@@ -25,6 +25,12 @@ class HomeController extends Controller
                 return view('modelproject/home', ['user' => $user]);
             elseif($user->account == "cmzapataj")
                 return view('analyst/home', ['user' => $user]);
+            /**elseif($user->typeuser == "Analyst")
+                return view('analyst/home', ['user' => $user]);*/
+                /**elseif($user->typeuser == "Developer")
+                return view('developer/home', ['user' => $user]);*/
+                /**elseif($user->typeuser == "Tester")
+                return view('tester/home', ['user' => $user]);*/
         }else
             return redirect('auth/login');
         //
